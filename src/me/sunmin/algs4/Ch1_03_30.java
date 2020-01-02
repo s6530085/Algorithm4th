@@ -1,6 +1,6 @@
 package me.sunmin.algs4;
 
-import me.sunmin.algs4.Steque.Node;
+import me.sunmin.algs4.Ch1_03_32.Node;
 
 public class Ch1_03_30 {
 	public static Node reverse(Node head) {

@@ -11,5 +11,4 @@ public class Ch1_01_06 {
 			g = f - g;
 		}
 	}
-
 }

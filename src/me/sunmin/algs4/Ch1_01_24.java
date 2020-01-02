@@ -6,7 +6,6 @@ public class Ch1_01_24 {
 
 	public static int gcd(int p, int q) {
 		System.out.printf("p is %d, q is %d\n", p, q);
-//		if (q > p) return gcd(q, p);
 		if (q == 0) return p;
 		int r = p % q;
 		return gcd(q, r);

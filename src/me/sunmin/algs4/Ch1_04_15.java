@@ -3,6 +3,7 @@ package me.sunmin.algs4;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
+import java.util.regex.Pattern;
 
 import edu.princeton.cs.algs4.In;
 import edu.princeton.cs.algs4.StdOut;
@@ -63,19 +64,29 @@ public class Ch1_04_15 {
 	
 	
 	public static void main(String[] args) {
-		int[] onek = new In("src/me/sunmin/data/8Kints.txt").readAllInts();
-		Stopwatch w1 = new Stopwatch();
-		int i1 = TwoSum(onek);
-		StdOut.println("elapse " + w1.elapsedTime() + " second " + i1);
 		
-		int[] onek2 = new In("src/me/sunmin/data/8Kints.txt").readAllInts();
-		Stopwatch w2 = new Stopwatch();
-		int i2 = TwoSumFast(onek2);
-		StdOut.println("elapse " + w2.elapsedTime() + " second " + i2);
-
-		int[] onek3 = new In("src/me/sunmin/data/8Kints.txt").readAllInts();
-		Stopwatch w3 = new Stopwatch();
-		int i3 = TwoSumFastFast(onek3);
-		StdOut.println("elapse " + w3.elapsedTime() + " second " + i3);
+		String p = "^(\\d+\\.)*\\d+$";
+		String [] ss = {"10.2.2", "75.0.3770.100", "5.2.01", "2"};
+		for (String s : ss) {
+			System.out.println("match result is " + s.matches(p));
+		}
+		
+		boolean b = 128==128;
+		b = 127==127;
+		int i = 100;
+//		int[] onek = new In("src/me/sunmin/data/8Kints.txt").readAllInts();
+//		Stopwatch w1 = new Stopwatch();
+//		int i1 = TwoSum(onek);
+//		StdOut.println("elapse " + w1.elapsedTime() + " second " + i1);
+//		
+//		int[] onek2 = new In("src/me/sunmin/data/8Kints.txt").readAllInts();
+//		Stopwatch w2 = new Stopwatch();
+//		int i2 = TwoSumFast(onek2);
+//		StdOut.println("elapse " + w2.elapsedTime() + " second " + i2);
+//
+//		int[] onek3 = new In("src/me/sunmin/data/8Kints.txt").readAllInts();
+//		Stopwatch w3 = new Stopwatch();
+//		int i3 = TwoSumFastFast(onek3);
+//		StdOut.println("elapse " + w3.elapsedTime() + " second " + i3);
 	}
 }

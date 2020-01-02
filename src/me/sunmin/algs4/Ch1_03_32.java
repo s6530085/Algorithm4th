@@ -1,6 +1,6 @@
 package me.sunmin.algs4;
 
-public class Steque<Item> {
+public class Ch1_03_32<Item> {
 	
 	@SuppressWarnings("hiding")
 	class Node<Item> {
