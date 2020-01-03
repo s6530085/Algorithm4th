@@ -16,6 +16,8 @@ public class Ch1_01_36 {
 		for (int i = 0; i < m.length; i++) {
 			int temp = m[i];
 			int index = StdRandom.uniform(i, m.length);
+			// 1.1.37
+//			int index = StdRandom.uniform(0, m.length);
 			m[i] = m[index];
 			m[index] = temp;
 		}
@@ -25,8 +27,8 @@ public class Ch1_01_36 {
 	public static void main(String[] args) {
 		int M = StdIn.readInt();
 		int N = StdIn.readInt();
-		int []matrix = new int[M];
-		int [][]result = new int[M][M];
+		int[] matrix = new int[M];
+		int[][] result = new int[M][M];
 		for (int i = 0; i < N; i++) {
 			arrange(matrix);
 			shuffle(matrix);
@@ -37,12 +39,10 @@ public class Ch1_01_36 {
 		}
 		for (int i = 0; i < M; i++) {
 			for (int j = 0; j < M; j++) {
-				StdOut.printf("%5d", result[i][j]);
+				StdOut.printf("%6d", result[i][j]);
 			}
 			StdOut.print("\n");
 		}
-		
-		
 	}
 	
 
