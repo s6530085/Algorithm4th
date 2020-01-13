@@ -15,9 +15,9 @@ public class Ch1_01_36 {
 	public static void shuffle(int[] m) {
 		for (int i = 0; i < m.length; i++) {
 			int temp = m[i];
-			int index = StdRandom.uniform(i, m.length);
+//			int index = StdRandom.uniform(i, m.length);
 			// 1.1.37
-//			int index = StdRandom.uniform(0, m.length);
+			int index = StdRandom.uniform(0, m.length);
 			m[i] = m[index];
 			m[index] = temp;
 		}

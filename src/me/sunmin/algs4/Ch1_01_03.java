@@ -15,10 +15,14 @@ public class Ch1_01_03 {
 	}
 	
 	public static void main(String[] args) {
-		int i1 = StdIn.readInt();
-		int i2 = StdIn.readInt();
-		int i3 = StdIn.readInt();
+//		int i1 = StdIn.readInt();
+//		int i2 = StdIn.readInt();
+//		int i3 = StdIn.readInt();
+//		
+//		StdOut.printf(threeEqual(i1, i2, i3));
 		
-		StdOut.printf(threeEqual(i1, i2, i3));
+		int index = "abc".indexOf(' ');
+		String s = "abc".substring(0, index);
+		StdOut.println(s);
 	}
 }

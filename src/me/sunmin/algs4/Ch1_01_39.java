@@ -33,8 +33,6 @@ public class Ch1_01_39 {
 			
 			StdOut.println(T + " experments " + size + " objects array have same count is " + (double)same/T);
 		}
-		
-
 	}
 
 }

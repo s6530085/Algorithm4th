@@ -1,8 +1,6 @@
 package me.sunmin.algs4;
 
 import java.util.Arrays;
-import java.util.Collections;
-
 import edu.princeton.cs.algs4.StdIn;
 import edu.princeton.cs.algs4.StdOut;
 
@@ -94,7 +92,6 @@ public class Ch1_01_34 {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
 	}
 
 }
